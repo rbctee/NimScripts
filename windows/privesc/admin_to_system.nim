@@ -22,11 +22,11 @@ var
     cb, targetProcessId : DWORD
 
 # initialize some variables
-cb = (DWORD) sizeof(TOKEN_PRIVILEGES)
-privilegeName = L"SeDebugPrivilege"
+cb = cast[DWORD](sizeof(TOKEN_PRIVILEGES))
+privilegeName = +$ "SeDebugPrivilege"
 
 # set the target process based on the command line argument 
-targetProcessId = (DWORD) parseInt(paramStr(1))
+targetProcessId = cast[DWORD](parseInt(paramStr(1)))
 
 # get the LUID (Locally Unique Identifier) of the specified privilege (SeDebugPrivilege)
 # first parameter is NULL because the lookup needs to be done on the local machine
