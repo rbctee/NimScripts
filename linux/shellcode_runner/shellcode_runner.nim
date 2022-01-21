@@ -1,5 +1,4 @@
 # Author: Robert C. Raducioiu (rbct)
-# Copyright: Attribution-NonCommercial-ShareAlike 4.0 International
 
 import strutils
 
