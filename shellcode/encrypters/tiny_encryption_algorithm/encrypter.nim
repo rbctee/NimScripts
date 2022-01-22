@@ -273,7 +273,7 @@ proc encrypt_shellcode(shellcode: seq[byte], key: string): seq[uint32] =
 #
 proc writeHelp() =
     echo "[+] Usage:\n\t", paramStr(0), " --input=shellcode.bin --output=encrypted.bin --key='0123456789abcdef'"
-    echo "[+] The encryption key's size must be 16 characters
+    echo "[+] The encryption key's size must be 16 characters"
 
 proc main(): void =
 
